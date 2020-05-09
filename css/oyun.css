@@ -1,0 +1,184 @@
+:root{
+    --backcolor-h:rgb(27,27,27);
+    --backcolor-l:rgb(47,47,47);
+    --backcolor-c:rgb(110,128,143);
+    --backcolor-r:rgb(47,47,47);
+    --backcolor-f:rgb(27,27,27);
+    --backcolor-s:rgba(27, 27, 27, 0.5);
+    --height-lcr:85vh;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#header{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    padding: 20px;
+    background-image: url("../images/header.png");
+}
+section{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    color: cornsilk;
+}
+
+#left{
+    flex: 10%;
+    height: var(--height-lcr);
+    background-color: var(--backcolor-l);
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+div#left p{
+    font-size: 1.5rem;
+    left:8px;
+}
+/* puan */
+#puan-txt{
+    position: relative;
+    top:20vh;
+}
+#puan{
+    position: relative;
+    text-align: center;
+    top:21vh;
+}
+/* kronometre*/
+#krono-txt{
+    position: relative;
+    top:40vh;
+}
+#krono{
+    position: relative;
+    top:41vh;
+    text-align: center;
+}
+#container{
+    flex: 60%;
+    height: var(--height-lcr);
+    background-color: var(--backcolor-c);
+    overflow: hidden;
+}
+/* soru ekranı */
+#vid-soru, #img-soru{
+    position: absolute;
+    width:60%;
+    bottom: 5vh;
+    height: 10vh;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px 15px;
+    background-color: var(--backcolor-s);
+
+}
+
+#right{
+    flex: 30%;
+    height: var(--height-lcr);
+    background-color: var(--backcolor-r);
+    overflow: hidden;
+    left:5%;
+    
+}
+
+#oyunbaslat{
+    position: relative;
+    top: 7vh;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 5px 5px;
+    background-color: rgb(92, 142, 235);
+    border-radius: 8px;
+    box-shadow: 0 0 50px 2px rgb(0, 0, 0); 
+    cursor: pointer;
+}
+#oyunbaslat:hover{
+    background-color: rgb(54, 101, 107);
+}
+#dogruYanlis{
+    position: relative;
+    top: 17vh;
+    left: 5%;
+    width: 90%;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 5px 5px;
+    color: rgb(25, 219, 25);
+    /*text-shadow: 2px 2px 5px green;*/
+}
+
+#cizgi{
+    position: relative;
+    top: 18vh;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(85, 170, 255);
+}
+.secenekler{
+    position: relative;
+    top:20vh;
+    /*left: 10%;*/
+    font-size: 1.4rem;
+    text-align: center;
+    
+    width: 90%;
+   
+}
+.secenek{
+    position: relative;
+    left: 5%;
+    text-align: left;
+    font-size: 1.4rem;
+    text-decoration: none;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    padding: 8px 6px;
+    vertical-align: center;
+    color: white;
+    background-color: #33466b;
+    border-radius: 8px;
+    border:none;
+    box-shadow: -1px 1px 1px 1px rgb(88, 194, 255);
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.secenek:hover{
+    background-color: #95abd8;
+}
+
+#sonrakiSoru{
+    position: relative;
+    display: none;
+    left: 5%;
+    text-align: left;
+    font-size: 1.4rem;
+    width: 90%;
+    margin-top: 30vh;
+    padding: 5px 5px;
+    background-color: rgb(84, 123, 207);
+    border-radius: 8px;
+    box-shadow: 0 0 50px 2px rgb(0, 0, 0); 
+    cursor: pointer;
+}
+#sonrakiSoru:hover{
+    background-color: rgb(68, 96, 156);
+}
+#footer{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--backcolor-f);
+}
